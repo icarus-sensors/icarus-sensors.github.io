@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   font-family: "lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 .text-muted {
   color: #777777;
