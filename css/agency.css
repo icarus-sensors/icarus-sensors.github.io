@@ -2,16 +2,14 @@ body {
   overflow-x: hidden;
   font-family: "lato", Helvetica, Arial, sans-serif;
   font-weight: 300;
+  font-size: 14px;
+  line-height: 1.75;
 }
 .text-muted {
   color: #777777;
 }
 .text-primary {
   color: #fed136;
-}
-p {
-  font-size: 14px;
-  line-height: 1.75;
 }
 p.large {
   font-size: 16px;
@@ -210,11 +208,13 @@ fieldset[disabled] .btn-xl.active {
   .navbar-default .navbar-nav > .active > a {
     border-radius: 3px;
   }
-  .navbar-default.navbar-shrink {
+  .navbar-default.navbar-shrink,
+  .navbar-default.navbar-dark {
     background-color: #222222;
     padding: 10px 0;
   }
-  .navbar-default.navbar-shrink .navbar-brand {
+  .navbar-default.navbar-shrink .navbar-brand,
+  .navbar-default.navbar-dark .navbar-brand {
     font-size: 1.5em;
   }
 }
@@ -294,6 +294,9 @@ section h3.section-subheading {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+#posts {
+  font-size: 18px;
 }
 #products .products-item {
   margin: 0 0 15px;
