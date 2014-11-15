@@ -5,9 +5,9 @@ layout: default
 <header id="page-top">
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">Welcome To Our Products!</div>
-            <div class="intro-heading">It's Nice To Meet You</div>
-            <a href="#mission" class="page-scroll btn btn-xl">Discover More</a>
+            <div class="intro-lead-in">{{ page.leadIn }}</div>
+            <div class="intro-heading">{{ page.heading }}</div>
+            <a href="{{ page.reference }}" class="page-scroll btn btn-xl">{{ page.buttonText }}</a>
         </div>
     </div>
 </header>
