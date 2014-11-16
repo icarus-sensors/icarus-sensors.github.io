@@ -6,7 +6,8 @@ categories: accelerometer
 ---
 ## Design requirements
 
-power efficiency. 
+Primary design goal of this product was power efficiency. Every single component was carefully picked to have as low
+   current requirement as possible. Good support for sleep mode was a must have.  
 
 ## Block diagram
 ![Accelerometer band block diagram][diagram]
