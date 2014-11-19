@@ -4,8 +4,6 @@ title:  "Starting with nRF51822"
 date:   2014-11-18
 categories: general
 ---
-##What is it all about
-
 When we come across nRF51822 [[1]][1] processor we immediately new that this is something extremely interesting and will let us do
 plenty of cool stuff with microdevices or so call wearables Do be honest we didn't even bother to check any other chip for 
 similar functionality. It has everything that we need: Cortex M0 CPU, integrated 2.4GHz radio circuit,Real Time Clock, 
