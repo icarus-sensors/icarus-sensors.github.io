@@ -146,6 +146,8 @@ SWD clock:           SWD <-----------> SWCLK (pin2)
 SWD data I/O:      SWDIO <-----------> SWDIO (pin4)
 {% endhighlight %}
 
+![Core51822 pinout layout][MK-NRF51822]
+
 and now run openocd
 
 {% highlight bash %}
@@ -237,3 +239,4 @@ Now you can upload you binaries into the chip exactly the same as way as before.
 [ST-Link V2 mini]: /img/posts/general/stlinkv2.jpg  "ST-Link V2 mini programmer"
 [Mini CP2102]: /img/posts/general/cp2102.jpg "Mini CP2102 USB 2.0 to UART"
 [Breadboard]: /img/posts/general/breadboard.jpg "Breadboard with some wires"
+[MK-NRF51822]: /img/posts/general/MK-NRF51822-2.jpg "Core51822 pinout layout"
