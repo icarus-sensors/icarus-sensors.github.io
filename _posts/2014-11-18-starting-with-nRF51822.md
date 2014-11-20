@@ -115,7 +115,7 @@ to the processor.
  
 Step 1 - Login or signup to [developer.mbed.org](http://developer.mbed.org)
  
-Step 2 - Navigate to [Icarus Sensors /  This repository is a library Blinking Led](https://developer.mbed.org/teams/Icarus-Sensors/code/Blinking-Led/) project
+Step 2 - Navigate to [Icarus Sensors / Blinking Led](https://developer.mbed.org/teams/Icarus-Sensors/code/Blinking-Led/) project
 and 
 
 ![Step 2](/img/posts/general/step2.jpg)
@@ -145,6 +145,8 @@ supply voltage:      VDD <-----------> 3.3V  (pin7,pin8)
 SWD clock:           SWD <-----------> SWCLK (pin2)
 SWD data I/O:      SWDIO <-----------> SWDIO (pin4)
 {% endhighlight %}
+
+To make it easier for you this is pinout diagram of Core51822 board. 
 
 ![Core51822 pinout layout][MK-NRF51822]
 
@@ -219,6 +221,33 @@ mv combined.hex Blinking-Led_NRF51822_.hex
 
 Now you can upload you binaries into the chip exactly the same as way as before.
 
+##Troubleshooting
+
+###Flash not initialized 
+When you get error while flashing your image like that  
+
+{% highlight bash %}
+failed erasing sectors 0 to 116
+in procedure ‘flash'
+{% endhighlight %}
+
+it probably means that you have to unblock your first sector of flash memory. 
+
+{% highlight bash %}
+nrf51 mass_erase
+{% endhighlight %}
+
+###Bad connection to processor
+
+If you get error like that check all your connection between programmer and processor. It is one of them which cause trouble. 
+
+{% highlight bash %}
+Error: open failed
+in procedure 'transport'
+in procedure 'init'
+{% endhighlight %}
+
+The most important thing while troubleshooting is to check and double check all your connections wires. 
 
 [1]: https://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF51822
 [2]: http://developer.mbed.org/platforms/Nordic-nRF51822/
@@ -227,16 +256,12 @@ Now you can upload you binaries into the chip exactly the same as way as before.
 [5]: https://www.nordicsemi.com/eng/Products/nRF51-DK
 [6]: http://www.st.com/web/catalog/tools/FM146/CL1984/SC724/SS1677/PF251168
 [7]: http://www.micromouseonline.com/2014/01/05/mini-st-linkv2-programmer/
-[8]: http://www.silabs.com/products/interface/usbtouart/Pages/usb-to-uart-bridge.aspx
 [9]: http://openocd.sourceforge.net
 [10]: https://launchpad.net/gcc-arm-embedded
 [11]: http://srecord.sourceforge.net
-[12]: http://pbxbook.com/other/mac-tty.html
 [13]: https://github.com/RIOT-OS/RIOT/wiki/Board%3A-yunjia-nrf51822
-[99]: https://developer.mbed.org/handbook/Debugging
 
 [Core51822]: /img/posts/general/core51822.jpg  "Cheap development board for nRF51822"
 [ST-Link V2 mini]: /img/posts/general/stlinkv2.jpg  "ST-Link V2 mini programmer"
-[Mini CP2102]: /img/posts/general/cp2102.jpg "Mini CP2102 USB 2.0 to UART"
 [Breadboard]: /img/posts/general/breadboard.jpg "Breadboard with some wires"
 [MK-NRF51822]: /img/posts/general/MK-NRF51822-2.jpg "Core51822 pinout layout"
