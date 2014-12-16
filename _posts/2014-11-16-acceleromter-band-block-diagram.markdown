@@ -51,4 +51,4 @@ is far better than using BLE radio. The same amount of data can be download in j
 [3]: https://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF51822
 [4]: https://bluegiga.zendesk.com/entries/22400867--HOW-TO-Maximize-throughput-with-BLE-modules
 
-[diagram]: /img/posts/accelerometer/accelerometer_band_block.png  "Accelerometer band block diagram"
+[diagram]: /img/posts/accelerometer/accelerometer-band-block.png  "Accelerometer band block diagram"
