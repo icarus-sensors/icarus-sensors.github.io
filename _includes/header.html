@@ -15,28 +15,16 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="hidden"><a href="#page-top"></a></li>
+                    <!--<li class="hidden"><a href="#page-top"></a></li>-->
                 {% if page.active == "home" %}
-                    <li><a class="page-scroll" href="#mission">Mission</a></li>
-                    <li><a class="page-scroll" href="#products">Products</a></li>
-                    <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#team">Team</a></li>
-                    <li><a class="page-scroll" href="#contact">Join Us</a></li>
+                    <li class="active"><a href="/">Our Project</a></li>
                     <li><a href="/blog.html">Blog</a></li>
                 {% elsif page.active == "blog" %}
-                    <li><a class="page-scroll" href="/#mission">Mission</a></li>
-                    <li><a class="page-scroll" href="/#products">Products</a></li>
-                    <li><a class="page-scroll" href="/#about">About</a></li>
-                    <li><a class="page-scroll" href="/#team">Team</a></li>
-                    <li><a class="page-scroll" href="/#contact">Join Us</a></li>
-                    <li><a class="page-scroll" href="#posts">Blog</a></li>
+                    <li><a href="/">Our Project</a></li>
+                    <li class="active"><a href="/blog.html">Blog</a></li>
                 {% else %}
-                    <li><a class="page-scroll" href="/#mission">Mission</a></li>
-                    <li><a class="page-scroll" href="/#products">Products</a></li>
-                    <li><a class="page-scroll" href="/#about">About</a></li>
-                    <li><a class="page-scroll" href="/#team">Team</a></li>
-                    <li><a class="page-scroll" href="/#contact">Join Us</a></li>
-                    <li class="active"><a class="page-scroll" href="/blog.html">Blog</a></li>
+                    <li><a href="/">Our Project</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
                 {% endif %}
 
 
